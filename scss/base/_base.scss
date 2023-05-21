@@ -5,10 +5,10 @@
 }
 
 html{
-    font-size: 62%;
+    font-size: 60%;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(6rem, 1fr);
     grid-template-rows: repeat(4, min-content);
