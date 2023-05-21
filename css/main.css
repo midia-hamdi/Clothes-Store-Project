@@ -4,7 +4,7 @@
   font-family: 'Josefin Sans', sans-serif; }
 
 html {
-  font-size: 60%; }
+  font-size: 62.5%; }
 
 .container {
   display: grid;
@@ -24,10 +24,20 @@ html {
 .first-nav {
   grid-column: 7 / 10;
   grid-row: 1 / 2; }
+  .first-nav-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
 
 .second-nav {
   grid-column: 3 / 8;
   grid-row: 3 / 4; }
+  .second-nav-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; }
 
 .dropdown {
   display: none; }
