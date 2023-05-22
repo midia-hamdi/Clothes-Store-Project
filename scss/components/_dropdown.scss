@@ -6,17 +6,26 @@
         content: '\f078';
         font-weight: bold;
     }
+
+    &:hover .dropdown{
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .dropdown{
     position: absolute;
     top: 3rem;
+    right: -2.8rem;
     width: 10rem;
     background-color: darken(color(tertiary), 5%);
     @include navigation;
     padding: 1rem;
     align-items: center;
     border-radius: 0.2rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s;
 
     &::before{
         content: '';
@@ -24,6 +33,9 @@
         position: absolute;
         top: -1.5rem;
         left: 7.3rem;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid darken(color(tertiary), 5%);
+        border-left: 15px solid transparent;
     }
 
     &-item{

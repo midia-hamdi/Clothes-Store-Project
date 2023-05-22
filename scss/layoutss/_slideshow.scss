@@ -1,0 +1,28 @@
+.slideshow{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+
+    &-slide{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: inherit;
+        height: inherit;
+
+        img{
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+    }
+
+    &-content{
+        background-color: rgba(color(secondary), .9);
+        position: absolute;
+        bottom: 6rem;
+        left: 6rem;
+    }
+}
