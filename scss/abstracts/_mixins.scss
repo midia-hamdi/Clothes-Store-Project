@@ -9,4 +9,15 @@
     &-item{
         list-style: none;
     }
+
+    &-link{
+        color: color(primary);
+        text-decoration: none;
+        font-size: Size(sm);
+        transition: all .3s;
+
+        &:hover{
+            color: lighten(color(primary), 40%);
+        }
+    }
 }
